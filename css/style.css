@@ -38,8 +38,13 @@ a.navbar-brand.logo {
   border-radius: 2px;
 }
 
-.i{
-	color:#fff;
+.sec-7 #contact{
+	background-image: url(../img/map-image.png);/*al inspeccionar dice q no esta la foto!*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100vh;
+
 }
 /* SEGUNDA SECCION: SERVICES */
 /* TERCERA SECCION: PORTFOLIO */
