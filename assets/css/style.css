@@ -1,0 +1,228 @@
+/* #FED123 */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+/* NAVBAR */
+
+.navbar-default {
+	background-color:transparent;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+	padding: 0 5%;
+}
+
+a.navbar-brand.logo {
+	color: #FED123;
+	font-family: 'Kaushan Script', cursive
+}
+.navbar-toggle{
+	background-color: #FED123;
+}
+
+.navbar-color{
+	background-color: #001510;/* recordar q se cambia al hacer el scroll desde js */
+}
+
+/* INICIO HOME */
+
+#home{
+	background-color:black;
+	background-image: url(../img/header-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+}
+
+#main-text{
+	color:#fff;
+	padding-top:200px;
+}
+
+#main-text h1{
+	font-size:4em;
+	font-weight:900;
+}
+.btn-default{
+  background-color: #FED123;
+  padding: 11px 20px;
+  border-radius: 2px;
+  color:#fff;
+  border:none;
+  margin-top: 30px;
+}
+
+/* SEGUNDA SECCION: SERVICES */
+
+#services{
+	padding: 7% 0;
+}
+
+#services h2,h4{
+	font-weight: 900;
+}
+#services .lorem{
+	padding-bottom:30px;
+	font-style: italic;
+}
+
+.icon{
+	background-color: #f9d014;
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	color: white;
+	margin: 0 auto;
+}
+
+.icon-detail{
+	padding-top: 10px;
+}
+
+/* TERCERA SECCION: PORTFOLIO */
+
+#portfolio{
+	background-color: #e5e5e5;
+	padding: 8% 0;
+}
+
+#portfolio h2{
+	font-weight: 900;
+}
+
+#portfolio p{
+	font-style: italic;
+}
+
+.title-portfolio{
+	padding-bottom: 4%;
+}
+
+.text-sec3{
+	background-color: #fff;
+	margin: 0;
+	padding-bottom: 8px;
+}
+
+.text-sec3 h4{
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.box{
+	margin-bottom: 20px;
+}
+
+/* CUARTA SECCION: ABOUT */
+
+#about{
+	padding: 8% 0;
+}
+
+#about h2{
+	font-weight: 900;
+}
+#about p{
+	font-style: italic;
+}
+.circle img{
+	border-radius:150px;
+	border: 5px solid lightgray;
+}
+
+.about-sec4{
+	margin-top: 50px;
+}
+
+.be-part{
+	background-color: #FED123;
+	border-radius: 120%;
+	border: 5px solid lightgray;
+}
+/*.be-part{
+	background-color: #FED123;
+	height: 147px;
+	border-radius:50%;
+	border: 5px solid lightgray;
+}*/
+
+.text-be-part{
+	margin-top: 70%;
+}
+/* QUINTA SECCION: OUR AMAZING TEAM */
+
+#team{
+	background-color: #e5e5e5;
+	padding: 6% 0;
+}
+
+.title-team{
+	padding-bottom: 4%;
+}
+
+.team p{
+	font-style: italic;
+}
+.negrita{
+	font-weight: 900;
+}
+
+.circle-team {
+	border-radius:150px;
+	border: 5px solid lightgray;
+}
+
+/* SEXTA SECCION: LOGOS */
+#logos{
+	padding: 4% 0;
+}
+
+/* SEPTIMA SECCION: CONTACT US */
+#contact{
+	background-image: url(../img/map-image.png); /*falta imagen*/
+	background-color: black;
+	padding: 6% 0;
+}
+
+.title-contact {
+	color:#fff;
+}
+
+#contact p{
+	font-style: italic;
+}
+
+.inputs{
+	border-radius: 5px;
+	border: none;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+p.title-contact {
+  padding-bottom: 4%;
+}
+
+.btn-send{
+	color: #fff;
+	font-weight: bold;
+}
+/* FOOTER */
+
+footer{
+	padding: 1.5% 0;
+	margin: 0;
+}
+
+footer p{
+	margin: 0;
+}
+.link {
+	color:#FED123 ;
+}

@@ -4,33 +4,36 @@
 	<meta charset="UTF-8">
 	<title>Lab Studio</title>
 </head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media.css">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+<body data-spy="scroll">
 
-<body>
 	<!-- NAVBAR -->
-	<section class="nav" id="start-bootstrap">		
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+	<section class="nav" id="start-bootstrap">
+		<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" id="header">
 			<div class="container-fluid">
 				<div class="navpart-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>						
+						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand logo" href="#">Start Bootstrap</a>
+					<a href="#" class="navbar-brand logo">
+						Start Bootstrap
+					</a>
 				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 links">
-					<ul class="nav navbar-nav navbar-right text-uppercase">
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#services">SERVICES</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#team">TEAM</a></li>
+						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
 			</div>
@@ -40,7 +43,7 @@
 	<section class="sec-1" id="home">
 		<div class="container">
 			<div class="row"><!-- cierre row home -->
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive" id="main-text">
 					<h2>Welcome To Our Studio!</h2>
 					<h1 class="text-uppercase">it's nice to meet you</h1>
 					<a href="#" class="btn-home btn btn-default text-center">TELL ME MORE</a> <!-- boton tell me more -->
@@ -55,156 +58,158 @@
 			<div class="row"><!-- cierre row home -->
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive">
 					<h2 class="text-uppercase">services</h2>
-					<h3>Lorem ipsum dolor sit amet consectetur</h3>
+					<p class="lorem">Lorem ipsum dolor sit amet consectetur</p>
 				</div><!-- cierre col -->
 			</div><!-- cierre row -->
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-					<h3>E-Commerce</h3>
+					<div class="icon"><i class="fa fa-shopping-cart fa-4x icon-detail" aria-hidden="true"></i>
+					</div>
+					<h4>E-Commerce</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dolores distinctio beatae veniam eius nobis ea tenetur! Nostrum, non, ullam.</p>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<i class="fa fa-laptop" aria-hidden="true"></i>
-					<h3>Responsive Design</h3>
+					<div class="icon"><i class="fa fa-laptop fa-4x icon-detail" aria-hidden="true"></i>
+					</div>
+					<h4>Responsive Design</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dolores distinctio beatae veniam eius nobis ea tenetur! Nostrum, non, ullam.</p>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					<h3>Web Security</h3>
+					<div class="icon"><i class="fa fa-lock fa-4x icon-detail" aria-hidden="true"></i>
+					</div>
+					<h4>Web Security</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dolores distinctio beatae veniam eius nobis ea tenetur! Nostrum, non, ullam.</p>
 				</div>
 			</div><!-- cierre row -->
-		</div><!-- cierre container -->			
+		</div><!-- cierre container -->
 	</section><!-- cierre seccion services -->
 
 		<!-- TERCERA SECCION: PORTFOLIO -->
 	<section class="sec-3" id="portfolio">
 		<div class="container">
-			<div class="row"><!-- primer row fotos-->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3"><!-- hago div para darle forma al circulo amarillo con border radios width height -->
-						<img src="img/roundicons.png" alt="iconos">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center title-portfolio">
+					<h2 class="text-uppercase">portfolio</h2>
+					<p>lorem ipsum dolor sit amet consecuteur</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img class="img-responsive cursor" src="assets/img/roundicons.png" alt="round icons">
 					</div>
 					<div class="text-sec3">
-						<p>Round Icons</p>
-						<p>Graphic Design</p>						
+						<h4 class="mb-0">Round Icons</h4>
+						<p>Graphic Design</p>
 					</div>
-		
-				</div><!-- cierre col -->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3">
-						<img src="img/startup-framework.png" alt="startup">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img class="img-responsive cursor" src="assets/img/startup-framework.png" alt="startup">
 					</div>
 					<div class="text-sec3">
-						<p>Startup Framework</p>
+						<h4 class="mb-0">Startup Framework</h4>
 						<p>Website Design</p>
 					</div>
-				</div><!-- cierre col -->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3">
-						<img src="img/treehouse.png" alt="treehouse">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img src="assets/img/treehouse.png" alt="treehouse" class="img-responsive cursor">
 					</div>
 					<div class="text-sec3">
-						<p>Treehouse</p>
+						<h4 class="mb-0">Tree House</h4>
 						<p>Website Design</p>
-					</div>	
-				</div><!-- cierre col -->
-			</div><!-- cierre primer row fotos -->
-
-			<div class="row"><!-- segundo row fotos-->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3">
-						<img src="img/golden.png" alt="golden">
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img src="assets/img/golden.png" alt="golden" class="img-responsive cursor">
 					</div>
 					<div class="text-sec3">
-						<p>Golden</p>
+						<h4 class="mb-0">Golden</h4>
 						<p>Website Design</p>
 					</div>
-				</div><!-- cierre col -->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3">
-						<img src="img/escape.png" alt="escape">
-					</div>
-					<p>Escape</p>
-					<p>Website Design</p>
-				</div><!-- cierre col -->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
-					<div class="icon-sec3">
-						<img src="img/dreams.png" alt="dreams">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img src="assets/img/escape.png" alt="escape" class="img-responsive cursor">
 					</div>
 					<div class="text-sec3">
-						<p>Dreams</p>
+						<h4 class="mb-0">Escape</h4>
 						<p>Website Design</p>
 					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center box">
+					<div class="text-center">
+						<img src="assets/img/dreams.png" alt="dreams" class="img-responsive cursor">
+					</div>
+					<div class="text-sec3">
+						<h4 class="mb-0">Dreams</h4>
+						<p>Website Design</p>
 				</div><!-- cierre col -->
 			</div><!-- cierre 2do row fotos -->
-		</div><!-- cierre container -->			
+		</div><!-- cierre container -->
 	</section><!-- cierre seccion portfolio -->
 
 		<!-- CUARTA SECCION: ABOUT -->
 	<section class="sec-4" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
 					<h2 class="text-uppercase">about</h2>
-					<h3>Lorem ipsum dolor sit amet consectetur.</h3>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->
-			<div class="row">
-				<div class="col-md-offset-5 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-responsive">
-					<h3>2009-2011</h3>
-					<h3>Our Humble Beginnings</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus animi ut doloremque voluptatibus rem libero eveniet, aliquam repellat maiores aspernatur numquam porro dolor eaque non fugit cupiditate cumque. Praesentium.</p>
-					<div class="icon-sec4">
-						<img class="img-circle" src="img/1.jpg" alt="humble">
-					</div>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->
-
-			<div class="row">
-				<div class="col-md-offset-5 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-responsive">
-					<h3>MARCH 2011</h3>
-					<h3>An Agency is Born</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus animi ut doloremque voluptatibus rem libero eveniet, aliquam repellat maiores aspernatur numquam porro dolor eaque non fugit cupiditate cumque. Praesentium.</p>
-					<div class="icon-sec4">
-						<img class="img-circle" src="img/2.jpg" alt="agency">
-					</div>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->
-
-			<div class="row">
-				<div class="col-md-offset-5 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-responsive">
-					<h3>DECEMBER 2012</h3>
-					<h3>Transition to Full Service</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus animi ut doloremque voluptatibus rem libero eveniet, aliquam repellat maiores aspernatur numquam porro dolor eaque non fugit cupiditate cumque. Praesentium.</p>
-					<div class="icon-sec4">
-						<img class="img-circle" src="img/3.jpg" alt="transition">
-					</div>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->
-
-			<div class="row">
-				<div class="col-md-offset-5 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-responsive">
-					<h3>JULY 2014</h3>
-					<h3>Phase Two Expansion</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus animi ut doloremque voluptatibus rem libero eveniet, aliquam repellat maiores aspernatur numquam porro dolor eaque non fugit cupiditate cumque. Praesentium.</p>
-					<div class="icon-sec4">
-						<img class="img-circle" src="img/4.jpg" alt="transition">
-					</div>
-			<div class="row">
-				<div class="col-md-offset-5 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center ">
-					<h3 class="text-uppercase">be part of your story!</h3>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->
-		</div><!-- cierre container -->	
-	</section><!-- cierre seccion about -->
+					<p>Lorem ipsum dolor sit amet consecuteur</p>
+				</div>
+			</div>
+			<div class="row about-sec4">
+				<div class="col-lg-4 col-md-4 col-md-offset-1 col-md-9 col-xs-9 text-right">
+					<h4>2009-2011<br>Our Humble Beginnings</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed numquam modi, quaerat quia, voluptatem maxime officiis maiores neque. Quo mollitia incidunt, debitis nemo doloremque, voluptatum cum dolorem. Laboriosam, nisi.</p>
+				</div>
+				<div class="circle col-lg-2 col-md-2 col-sm-3 col-xs-3">
+					<img src="assets/img/1.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="row about-sec4">
+				<div class="circle col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-3 col-xs-3">
+					<img src="assets/img/2.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-lg-4 col-md-4 col-md-9 col-xs-9">
+					<h4>MARCH 2011<br>An Agency is Born</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed numquam modi, quaerat quia, voluptatem maxime officiis maiores neque. Quo mollitia incidunt, debitis nemo doloremque, voluptatum cum dolorem. Laboriosam, nisi.</p>
+				</div>
+			</div>
+			<div class="row about-sec4">
+				<div class="col-lg-4 col-md-4 col-md-offset-1 col-md-9 col-xs-9 text-right">
+					<h4>DECEMBER 2012<br>Transition to Full Service</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed numquam modi, quaerat quia, voluptatem maxime officiis maiores neque. Quo mollitia incidunt, debitis nemo doloremque, voluptatum cum dolorem. Laboriosam, nisi.</p>
+				</div>
+				<div class="circle col-lg-2 col-md-2 col-sm-3 col-xs-3">
+					<img src="assets/img/3.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="row about-sec4">
+				<div class="circle col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-3 col-xs-3">
+					<img src="assets/img/4.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-lg-4 col-md-4 col-md-9 col-xs-9">
+					<h4>JULY 2014<br>Phase Two Expansion</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed numquam modi, quaerat quia, voluptatem maxime officiis maiores neque. Quo mollitia incidunt, debitis nemo doloremque, voluptatum cum dolorem. Laboriosam, nisi.</p>
+				</div>
+			</div>
+			<div class="row about-sec4">
+				<div class="circle col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-3 col-xs-3 be-part text-center">
+					<h4 class="text-uppercase text-be-part">be part<br>of our<br>story!</h4>
+				</div>
+			</div>
+		</div>
+	</section>
 
 		<!-- QUINTA SECCION: OUR AMAZING TEAM -->
+
 	<section class="sec-5" id="team">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-responsive title-team">
 					<h2 class="text-uppercase negrita">our amazing team</h2>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 				</div><!-- cierre col -->
@@ -212,10 +217,10 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
 					<div class="pic-sec5">
-						<img class="img-circle" src="img/1 (1).jpg" alt="kay-garland">	
+						<img class="img-circle circle-team" src="assets/img/1 (1).jpg" alt="kay-garland">	
 					</div>	
 					<div class="text-sec4">
-						<p class="negrita">Kay Garland</p>
+						<h3 class="negrita">Kay Garland</h3>
 						<p>Lead Designer</p>
 					</div>	
 					<div class="media-icon">
@@ -236,10 +241,10 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
 					<div class="pic-sec5">
-						<img class="img-circle" src="img/2 (1).jpg" alt="kay-garland">	
+						<img class="img-circle circle-team" src="assets/img/2 (1).jpg" alt="kay-garland">	
 					</div>	
 					<div class="text-sec4">
-						<p class="negrita">Larry Parker</p>
+						<h3 class="negrita">Larry Parker</h3>
 						<p>Lead Marketer</p>
 					</div>	
 					<div class="media-icon">
@@ -260,10 +265,10 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
 					<div class="pic-sec5">
-						<img class="img-circle" src="img/3 (1).jpg" alt="kay-garland">	
+						<img class="img-circle circle-team" src="assets/img/3 (1).jpg" alt="kay-garland">	
 					</div>	
 					<div class="text-sec4">
-						<p class="negrita">Diana Petersen</p>
+						<h3 class="negrita">Diana Petersen</h3>
 						<p>Lead Developer</p>
 					</div>	
 					<div class="media-icon">
@@ -279,15 +284,9 @@
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-linkedin fa-stack-1x fa-inverse cursor"></i>
 						</span>
-					</div>	<!-- cierre media icon -->	
+					</div><!-- cierre media icon --
 				</div><!-- cierre col -->
 			</div><!-- cierre row -->
-
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 text-center">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis eveniet at incidunt autem maxime</p>
-				</div><!-- cierre col -->
-			</div><!-- cierre row -->			
 	</section><!-- cierre seccion amazing team -->
 
 		<!-- SEXTA SECCION: LOGOS -->
@@ -295,22 +294,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-12 text-center">
-					<img src="img/envato.jpg" alt="publicidad">
+					<img src="assets/img/envato.jpg" alt="publicidad">
 				</div>
 
 				<div class="col-md-3 col-xs-12 text-center">
-					<img src="img/designmodo.jpg" alt="publicidad">
+					<img src="assets/img/designmodo.jpg" alt="publicidad">
 				</div>
 
 				<div class="col-md-3 col-xs-12 text-center">
-					<img src="img/themeforest.jpg" alt="publicidad">
+					<img src="assets/img/themeforest.jpg" alt="publicidad">
 				</div>
 
 				<div class="col-md-3 col-xs-12 text-center">
-					<img src="img/creative-market.jpg" alt="publicidad">
+					<img src="assets/img/creative-market.jpg" alt="publicidad">
 				</div>
 			</div><!-- cierre col -->
-		</div><!-- cierre row -->		
+		</div><!-- cierre row -->
 	</section><!-- cierre seccion logos -->
 
 	<!-- SEPTIMA SECCION: CONTACT US -->
@@ -318,10 +317,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-xs-12 text-center">
-					<h2 class="titulo-contact">CONTACT US</h2>
-					<p class="parrafo-contact"><em>Lorem ipsum dolor sit amet consectetur</em></p>
+					<h2 class="title-contact negrita">CONTACT US</h2>
+					<p class="title-contact">Lorem ipsum dolor sit amet consecuteur</p>
 				</div>
-
 				<div class="row">
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
@@ -349,7 +347,7 @@
 	<!-- FOOTER -->
 	<footer>
 		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-left">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 				<p>Copyright Your Website 2017</p>
 			</div><!-- cierre col -->
 
@@ -374,7 +372,7 @@
 			<!-- links izq -->
 			<div class="col-lg-4 col-md-4-col-sm-12-col-xs-12 text-center mt-5">
 				<a class="link" href="#">Privacy Policy  </a>
-				<a class="link" href="#">  Terms of Use</a>		
+				<a class="link" href="#">Terms of Use</a>		
 			</div><!-- cierre col -->
 		</div><!-- cierre row -->	
 	</footer><!-- cierre footer -->
@@ -382,6 +380,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/8f8db047c3.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 </html>
